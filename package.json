@@ -9,12 +9,16 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-package": "set BUILD_PATH=lib && react-scripts build",
+    "build-package": "babel src -d dist",
+    "start-build-package": "npm run build-package && node dist/index.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,7 +41,7 @@
     ]
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "files": [
     "index.js"
   ],
