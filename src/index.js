@@ -5,6 +5,7 @@ import './index.css';
 // import Vk from './Vk';
 export * from './App';
 export * from './Vk';
+export * from './DefaultVK';
 import reportWebVitals from './reportWebVitals';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
