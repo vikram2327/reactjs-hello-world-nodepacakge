@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-// import App from './App';
-// import Vk from './Vk';
-export * from './App';
-export * from './Vk';
-export * from './DefaultVK';
-import reportWebVitals from './reportWebVitals';
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import './index.css';
+// // import App from './App';
+// // import Vk from './Vk';
+// export * from './App';
+// export * from './Vk';
+// export * from './DefaultVK';
+// import reportWebVitals from './reportWebVitals';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -19,3 +19,9 @@ import reportWebVitals from './reportWebVitals';
 // // to log results (for example: reportWebVitals(console.log))
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
+
+import React from 'react';
+
+export default function HelloWorld() {
+  return <h1>Hello World!</h1>;
+}
